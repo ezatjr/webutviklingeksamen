@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+</head>
+<body>
+<!-- Global Header -->
+<header class="headeren">
+    <nav class="søke-container">
+        <input type="text" placeholder="søk her">
+        <button type="submit" class="search-button">🔍</button>
+    </nav>
+    <nav class="navigasjon">
+        <a href="index.html" class="menu-item">Hjem</a>
+        <a href="index.html#mest-popular-produkt" class="menu-item">Produkter</a>
+        <a href="index.html" class="logo">Logo</a>
+        <a href="index.html#mest-popular-kategorier" class="menu-item">Kategorier</a>
+        <a href="#footer" class="menu-item">Kontakt oss</a>
+    </nav>
+    <nav class="menu-icons-container">
+        <a href="#" class="menu-icon">👤</a>
+        <a href="#" class="menu-icon">❤️</a>
+        <a href="checkout.html" class="menu-icon">🛒</a>
+    </nav>
+    
+</header>
+
+<main>
+    <section class="betaling-container">
+        <a href="index.html" class="back-link">← Fortsett og handle</a>
+        
+        <h1 class="betaling-title">Kasse</h1>
+        
+        <section class="vogn-section">
+            <h2 class="section-title">1. SHOPPINGBAGEN DIN</h2>
+            <ul class="vogn-items">
+                <li class="vogn-item">
+               <a href="product.html">   <img src="airfoce.png" alt="Product" class="vogn-item-image"></a>
+                    <article class="vogn-item-details">
+                        <h3 class="product-name">PRODUCT NAME</h3>
+                        <p class="product-price">Kr 1599</p>
+                        <p class="product-color">Farge: Beige</p>
+                        <section class="quantity-selector">
+                            <label>Størrelse
+                                <select>
+                                    <option>XS</option>
+                                    <option selected>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select>
+                            </label>
+                            <label class="quantity-select-label">Antall
+                                <input id="counter-1" type="number" value="1" min="1" max="100" style="width: 40px; text-align: center;">
+
+                            </label>
+                        </section>
+                    </article>
+                    <aside class="vogn-item-actions">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                        <button class="remove-btn" aria-label="Remove item">🗑</button>
+                    </aside>
+                </li>
+                <li class="vogn-item">
+                    <a href="product.html">   <img src="airfoce.png" alt="Product" class="vogn-item-image"></a>
+                    <article class="vogn-item-details">
+                        <h3 class="produkt-name">PRODUCT NAME</h3>
+                        <p class="produkt-pris">Kr 1599</p>
+                        <p class="produkt-farge">Farge: Beige</p>
+                        <section class="quantity-selector">
+                            <label>Størrelse
+                                <select>
+                                    <option>XS</option>
+                                    <option selected>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select>
+                            </label>
+                            <label class="quantity-select-label">Antall
+                                <input id="counter-2" type="number" value="1" min="1" max="100" style="width: 40px; text-align: center;">
+                                <!-- Kilde til select counter; https://www.w3schools.com/tags/att_input_type_number.asp  -->
+
+                            </label>
+                        </section>
+                    </article>
+                    <aside class="vogn-item-actions">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                        <button class="remove-btn" aria-label="Remove item">🗑</button>
+                    </aside>
+                </li>
+                <li class="vogn-item">
+                    <a href="product.html">   <img src="airfoce.png" alt="Product" class="vogn-item-image"></a>
+                    <article class="vogn-item-details">
+                        <h3 class="product-name">PRODUCT NAME</h3>
+                        <p class="product-price">Kr 1599</p>
+                        <p class="product-color">Farge: Beige</p>
+                        <section class="quantity-selector">
+                            <label>Størrelse
+                                <select>
+                                    <option>XS</option>
+                                    <option selected>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select>
+                            </label>
+                            <label class="quantity-select-label">Antall
+                                <input id="counter-3" type="number" value="1" min="1" max="100" style="width: 40px; text-align: center;">
+
+                            </label>
+                        </section>
+                    </article>
+                    <aside class="vogn-item-actions">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+                        <button class="remove-btn" aria-label="Remove item">🗑</button>
+                    </aside>
+                </li>
+            </ul>
+        </section>
+
+      
+<!-- Kilde til oppretting av checkout side; https://www.w3schools.com/howto/howto_css_checkout_form.asp  -->
+        <section class="info-section">
+            <h2 class="section-title">2. DINE OPPLYSNINGER</h2>
+            <form class="customer-form">
+                <fieldset class="form-section">
+                    <legend class="subsection-label">Leveringsadresse</legend>
+                    <section class="form-grid">
+                        <label class="form-group">
+                            <span>Fornavn</span>
+                            <input type="text" id="firstname" placeholder="Nora*" required>
+                        </label>
+                        <label class="form-group form-group-right">
+                            <span>Etternavn</span>
+                            <input type="text" id="lastname" placeholder="Nordman*" required>
+                        </label>
+                        <label class="form-group full-width">
+                            <span>Gateadresse</span>
+                            <input type="text" id="address" placeholder="BRA veien 4*" required>
+                        </label>
+                        <label class="form-group">
+                            <span>Postnummer</span>
+                            <input type="number" id="postcode" placeholder="1752*" required>
+                        </label>
+                        <label class="form-group form-group-right">
+                            <span>Poststed</span>
+                            <input type="text" id="poststed" placeholder="Halden*" required>
+                        </label>
+                    </section>
+                </fieldset>
+        
+                <fieldset class="form-section">
+                    <legend class="subsection-label">Kontaktinformasjon</legend>
+                    <label>E-post</label>
+                    <input type="email" placeholder="Noranordman@hof.no*">
+                    <label>Telefon</label>
+                    <input type="tel" placeholder="+47 49***018">
+                </fieldset>
+        
+                <button type="submit" class="submit-button">Lagre</button>
+                <a href="#" class="cancel-link">Avbryt</a>
+            </form>
+        </section>
+        
+        
+      <!-- Kilde til leveringside; CHATGPT  -->
+        <section class="delivery-section">
+            <h2 class="section-title">3. LEVERING</h2>
+            <h3 class="subsection-title">LEVERINGSVALG</h3>
+            <ul class="delivery-options">
+                <li class="delivery-option">
+                    <input type="radio" name="delivery" id="express-home" class="delivery-radio">
+                    <label for="express-home" class="delivery-label">
+                        <span class="delivery-header">
+                            <span class="delivery-title">Express Hjemlevering</span>
+                            <span class="delivery-price">59 kr <span class="delivery-icon">🚚</span></span>
+                        </span>
+                        <span class="delivery-time">3-4 Virkedager</span>
+                        <span class="delivery-details">
+                            Bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost 
+                            mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, 
+                            for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.
+                        </span>
+                    </label>
+                </li>
+        
+                <li class="delivery-option">
+                    <input type="radio" name="delivery" id="express-pickup" class="delivery-radio">
+                    <label for="express-pickup" class="delivery-label">
+                        <span class="delivery-header">
+                            <span class="delivery-title">Ekspress Pakke til utleveringssted</span>
+                            <span class="delivery-price">59 kr <span class="delivery-icon">📦</span></span>
+                        </span>
+                        <span class="delivery-time">1-3 Virkedager</span>
+                    </label>
+                </li>
+        
+                <li class="delivery-option">
+                    <input type="radio" name="delivery" id="standard-delivery" class="delivery-radio">
+                    <label for="standard-delivery" class="delivery-label">
+                        <span class="delivery-header">
+                            <span class="delivery-title">Standard Hjemlevering</span>
+                            <span class="delivery-price">Gratis <span class="delivery-icon">🎁</span></span>
+                        </span>
+                        <span class="delivery-time">5-8 Virkedager</span>
+                        <span class="delivery-details">
+                            Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </section>
+        
+        
+        <section class="payment-section">
+            <h2 class="section-title">4. BETALING</h2>
+            <article class="payment-content">
+                <header class="payment-header">
+                    <h3 class="payment-title">BETAL MED KORT ▭</h3>
+                </header>
+                
+                <form class="payment-form">
+                    <fieldset>
+                        <label class="form-group full-width">
+                            <span>Kortnummer</span>
+                            <input type="text" id="card-number" placeholder="342342****4435">
+                            <span class="copy-button">⎘</span>
+                        </label>
+                        
+                        <section class="form-row">
+                            <label class="form-group">
+                                <span>Utløpsdato</span>
+                                <input type="text" id="expiry" placeholder="mm / dd / yyyy">
+                            </label>
+                            <label class="form-group">
+                                <span>CVC/CVV</span>
+                                <input type="text" id="cvc" placeholder="CVC/CVV">
+                            </label>
+                        </section>
+                    </fieldset>
+                </form>
+        
+                <footer class="total-section">
+                    <p class="total-label">Å betale inkl. mva.</p>
+                    <h3 class="total-amount">1 199 kr</h3>
+                </footer>
+        
+                <button class="submit-button">Fullfør kjøp</button>
+        
+                <p class="terms-text">
+                    Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
+                    Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger 
+                    uriktige eller ufullstendige opplysninger
+                </p>
+        
+                <ul class="checkbox-group">
+                    <li class="checkbox-item">
+                        <input type="checkbox" id="newsletter">
+                        <label for="newsletter">Ja takk! Send nyhetsbrev til meg.</label>
+                    </li>
+                    <li class="checkbox-item">
+                        <input type="checkbox" id="sms">
+                        <label for="sms">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        
+    </section>
+    <!-- Kilde til oppretting av checkout side; https://www.w3schools.com/howto/howto_css_checkout_form.asp  -->
+
+</main>
+
+
+<section class="midtstilt">
+    <hr class="midtlinje">
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <article class="footer-container">
+        <section class="footer-logo">
+            <a href="#">Logo</a>
+        </section>
+                <section class="footer-description">
+                    Vi gjør det enkelt å finne sko som passer både deg og din livsstil.
+        </section>
+        <nav class="footer-sections">
+            <section class="row-footer">
+            <section class="footer-contact">
+                <h4>KONTAKT</h4>
+                <address>
+                    <span class="icon">📍</span><strong>Adresse:</strong> B R A Veien 4, 1757 Halden
+                    <br>
+                    <br>
+                    <span class="icon">📞</span><strong>Telefon:</strong> 69 60 80 00
+                    <br>
+                    <br>
+                    <span class="icon">📧</span><strong>E-post:</strong> halden@hlof.no
+                    <br>
+                    <br>
+                    <span class="icon">⏰</span><strong>Åpningstider:</strong> Stenger 15:00
+                </address>
+                
+            </section>
+            <section class="footer-navigation">
+                <h4>SNARVEIER</h4>
+                <a href="#">Produkter</a>
+                <a href="#">Kategorier</a>
+                <a href="#">Kontakt oss</a>
+            </section>
+        </section>
+            <section class="footer-social">
+                <h4>SOSIALE MEDIER</h4>
+                <nav class="social-icons">
+                    <a href="https://www.instagram.com/.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                </nav>
+            </section>
+        </nav>
+    </article>
+</footer>
+
+</body>
+</html>

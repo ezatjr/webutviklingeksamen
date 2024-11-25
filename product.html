@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettbutikk -Produkter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+<!-- Global Header -->
+<header class="headeren">
+    <nav class="søke-container">
+        <input type="text" placeholder="søk her">
+        <button type="submit" class="search-button">🔍</button>
+    </nav>
+    <nav class="navigasjon">
+        <a href="index.html" class="menu-item">Hjem</a>
+        <a href="index.html#mest-popular-produkt" class="menu-item">Produkter</a>
+        <a href="index.html" class="logo">Logo</a>
+        <a href="index.html#mest-popular-kategorier" class="menu-item">Kategorier</a>
+        <a href="#footer" class="menu-item">Kontakt oss</a>
+    </nav>
+    <nav class="menu-icons-container">
+        <a href="#" class="menu-icon">👤</a>
+        <a href="#" class="menu-icon">❤️</a>
+        <a href="checkout.html" class="menu-icon">🛒</a>
+    </nav>
+    
+</header>
+
+<main>
+    <section class="produkt-side">
+        <nav class="breadcrumb">
+            <a href="index.html">Hjem</a> &gt; <a href="index.html#most-popular-categories">Kategori</a> &gt; <span>Produktnavn</span>
+        </nav>
+        <article class="produkt-content">
+            <figure class="produkt-gallery">
+                <section class="thumbnail-gallery">
+                    <img src="airfoce.png" alt="Thumbnail 1">
+                    <img src="airfoce.png" alt="Thumbnail 2">
+                    <img src="airfoce.png" alt="Thumbnail 3">
+                </section>
+                <img src="airfoce.png" alt="Product Image" class="main-image">
+            </figure>
+            <section class="produkt-details">
+                <h1>Produktnavn</h1>
+                <a href="#">MERKENAVN</a>
+                <p class="price">5 195 kr inkl. mva.</p>
+                <p class="color">Farge: <span class="color-value">beige</span></p>
+                <form>
+                    <label for="size">Velg størrelse</label>
+                    <select id="size">
+                        <option>Velg størrelse</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+                </form>
+                <section class="leggtil-handlekurv-container">
+                    <button class="leggtil-handlekurv">Legg i handlekurv</button>
+                    <aside class="heart-icon">
+                        <span>♡</span>
+                    </aside>
+                </section>
+                <section class="extra-info">
+                    <article class="info-item">
+                        <button aria-expanded="false" aria-controls="material-content">
+                            <span>Materiale og vedlikehold</span>
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div id="material-content" class="info-content">
+                            <p>Dette produktet er laget av høykvalitets bomull og krever minimal vedlikehold. Vask på 30°C og heng til tørk for beste resultat.</p>
+                        </div>
+                    </article>
+                    <article class="info-item">
+                        <button aria-expanded="false" aria-controls="details-content">
+                            <span>Produktdetaljer</span>
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div id="details-content" class="info-content">
+                            <p>Dette produktet har en slank passform og er laget med fokus på komfort og stil. Det har forsterkede sømmer for økt holdbarhet.</p>
+                        </div>
+                    </article>
+                    <article class="info-item">
+                        <button aria-expanded="false" aria-controls="size-content">
+                            <span>Størrelsestabell</span>
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <section id="size-content" class="info-content">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>EU</th>
+                                        <th>INT</th>
+                                        <th>BRYSTVIDDE</th>
+                                        <th>LIVVIDDE</th>
+                                        <th>HOFTEMÅL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>XXS</td>
+                                        <td>76</td>
+                                        <td>63</td>
+                                        <td>85</td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>XS</td>
+                                        <td>80</td>
+                                        <td>66</td>
+                                        <td>89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>S</td>
+                                        <td>84</td>
+                                        <td>69</td>
+                                        <td>93</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>M</td>
+                                        <td>88</td>
+                                        <td>72</td>
+                                        <td>97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>L</td>
+                                        <td>92</td>
+                                        <td>76</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>XL</td>
+                                        <td>96</td>
+                                        <td>80</td>
+                                        <td>103</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44</td>
+                                        <td>XXL</td>
+                                        <td>100</td>
+                                        <td>85</td>
+                                        <td>106</td>
+                                    </tr>
+                                    <tr>
+                                        <td>46</td>
+                                        <td>3XL</td>
+                                        <td>104</td>
+                                        <td>90</td>
+                                        <td>109</td>
+                                    </tr>
+                                    <tr>
+                                        <td>48</td>
+                                        <td>4XL</td>
+                                        <td>110</td>
+                                        <td>96.5</td>
+                                        <td>114</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>5XL</td>
+                                        <td>116</td>
+                                        <td>103</td>
+                                        <td>119</td>
+                                    </tr>
+                                    <!-- Continue adding rows as needed -->
+                                </tbody>
+                            </table>
+                        </section>
+                    </article>
+                </section>
+                <section class="reviews" id="reviews-footer" aria-expanded="false" aria-controls="review-content">
+                    <p>Anmeldelser</p>
+                    <p>⭐⭐⭐⭐☆32</p>
+                </section>
+                <section id="review-content" class="review-content">
+                    <article class="review-card2">
+                        <h4>Ezat Jakob</h4>
+                        <p>2024-10-02</p>
+                        <p>⭐⭐⭐⭐☆</p>
+                        <p>Fantastisk service og veldig komfortable sko! Jeg er imponert over kvaliteten og vil definitivt handle her igjen."
+                        </article>
+                </section>
+                    
+                
+                
+            </section>
+        </article>
+    </section>
+    
+    
+    <section class="lignende-produkter">
+        <h2 class="section-header">
+            <span>Lignende produkter</span>
+            <a href="#" class="se-mer">Se flere lignende produkter →</a>
+        </h2>
+        <div class="produkt-grid-container">
+            <div class="produkt-grid">
+                <a href="#" class="produkt-kort">
+                    <span class="heart-container">
+                        <span class="heart-icon-circle">
+                            <span>♡</span>
+                        </span>
+                    </span>
+                    
+                    <img src="airfoce.png" alt="Produkt bilde">
+                    <section class="produkt-info">
+                        <h3>Nike Air Force</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <footer class="rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <p class="reviews">842 Reviews</p>
+                    </footer>
+                </a>
+
+
+                <a href="#" class="produkt-kort">
+                    <span class="heart-container">
+                        <span class="heart-icon-circle">
+                            <span>♡</span>
+                        </span>
+                    </span>
+                  <img src="airfoce.png" alt="Produkt bilde">
+                <section class="produkt-info">
+                    <h3>Nike Air Force</h3>
+                    <p class="price">Kr 1999</p>
+                </section>
+                <footer class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <p class="reviews">842 Reviews</p>
+                </footer>
+                </a>
+                <a href="#" class="produkt-kort">
+                    <span class="heart-container">
+                        <span class="heart-icon-circle">
+                            <span>♡</span>
+                        </span>
+                    </span>
+                    <img src="airfoce.png" alt="Produkt bilde">
+                <section class="produkt-info">
+                    <h3>Nike Air Force</h3>
+                    <p class="price">Kr 1999</p>
+                </section>
+                <footer class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <p class="reviews">842 Reviews</p>
+                </footer>
+                </a>
+                
+                <a href="#" class="produkt-kort">
+                    <span class="heart-container">
+                        <span class="heart-icon-circle">
+                            <span>♡</span>
+                        </span>
+                    </span>
+                    <img src="airfoce.png" alt="Produkt bilde">
+                <section class="produkt-info">
+                    <h3>Nike Air Force</h3>
+                    <p class="price">Kr 1999</p>
+                </section>
+                <footer class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <p class="reviews">842 Reviews</p>
+                </footer>
+                </a>
+                <a href="#" class="produkt-kort">
+                    <span class="heart-container">
+                        <span class="heart-icon-circle">
+                            <span>♡</span>
+                        </span>
+                    </span>
+                    <img src="airfoce.png" alt="Produkt bilde">
+                <section class="produkt-info">
+                    <h3>Nike Air Force</h3>
+                    <p class="price">Kr 1999</p>
+                </section>
+                <footer class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <p class="reviews">842 Reviews</p>
+                </footer>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<section class="midtstilt">
+    <hr class="midtlinje">
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <article class="footer-container">
+        <section class="footer-logo">
+            <a href="#">Logo</a>
+        </section>
+                <section class="footer-description">
+                    Vi gjør det enkelt å finne sko som passer både deg og din livsstil.
+        </section>
+        <nav class="footer-sections">
+            <section class="row-footer">
+            <section class="footer-contact">
+                <h4>KONTAKT</h4>
+                <address>
+                    <span class="icon">📍</span><strong>Adresse:</strong> B R A Veien 4, 1757 Halden
+                    <br>
+                    <br>
+                    <span class="icon">📞</span><strong>Telefon:</strong> 69 60 80 00
+                    <br>
+                    <br>
+                    <span class="icon">📧</span><strong>E-post:</strong> halden@hlof.no
+                    <br>
+                    <br>
+                    <span class="icon">⏰</span><strong>Åpningstider:</strong> Stenger 15:00
+                </address>
+                
+            </section>
+            <section class="footer-navigation">
+                <h4>SNARVEIER</h4>
+                <a href="#">Produkter</a>
+                <a href="#">Kategorier</a>
+                <a href="#">Kontakt oss</a>
+            </section>
+        </section>
+            <section class="footer-social">
+                <h4>SOSIALE MEDIER</h4>
+                <nav class="social-icons">
+                    <a href="https://www.instagram.com/.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                </nav>
+            </section>
+        </nav>
+    </article>
+</footer>
+
+<script>
+    //Javasacript for annmendelse lukk og åpne vindu
+    document.getElementById("reviews-footer").addEventListener("click", function () {
+// Slå av aria-utvidet attributt    
+const isExpanded = this.getAttribute("aria-expanded") === "true";
+    this.setAttribute("aria-expanded", !isExpanded);
+});
+
+</script>
+</body>
+</html>

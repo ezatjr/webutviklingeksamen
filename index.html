@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+</head>
+<body>
+<!-- Global Header -->
+<header class="headeren">
+    <nav class="søke-container">
+        <input type="text" placeholder="søk her">
+        <button type="submit" class="search-button">🔍</button>
+    </nav>
+    <nav class="navigasjon">
+        <a href="index.html" class="menu-item">Hjem</a>
+        <a href="index.html#mest-popular-produkt" class="menu-item">Produkter</a>
+        <a href="index.html" class="logo">Logo</a>
+        <a href="#mest-popular-kategorier" class="menu-item">Kategorier</a>
+        <a href="#footer" class="menu-item">Kontakt oss</a>
+    </nav>
+    <nav class="menu-icons-container">
+        <a href="#" class="menu-icon">👤</a>
+        <a href="#" class="menu-icon">❤️</a>
+        <a href="checkout.html" class="menu-icon">🛒</a>
+    </nav>
+    
+</header>
+<!-- Kilde https://www.youtube.com/watch?v=iNFZFvvNQP0&list=PLrs1b_pKUik4nEp2Adn9YQm-vw8vafQ-z -->
+<main>
+    <section class="banner swiper">
+        <section class="swiper-wrapper">
+            <article class="swiper-slide banner-slide" style="background-image: url('stovler.webp');">
+                <header class="banner-overlay">
+                    <article class="banner-content">
+                        <h2>Velkommen til skobutikken vår.</h2>
+                        <p>Vi har mange forskjellige sko, alt fra løpesko til sneakers. Vi har støvler og tøfler. Ta gjerne kontakt med oss om du lurer på noe.</p>
+                        <a href="#" class="banner-button">LES MER</a>
+                    </article>
+                </header>
+            </article>
+            <article class="swiper-slide banner-slide" style="background-image: url('tofler.jpg');">
+                <header class="banner-overlay banner-overlay-left">
+                    <article class="banner-content banner-content-left">
+                        <h2>Oppdag vår eksklusive kolleksjon av vinterstøvler</h2>
+                        <p>Hold deg varm og stilig i vinter med våre høykvalitetsstøvler, designet for alle forhold. Perfekt for både fjellturer og byvandring.</p>
+                        <a href="#" class="banner-button">LES MER</a>
+                    </article>
+                </header>
+            </article>
+            <article class="swiper-slide banner-slide" style="background-image: url('sneakers.jpg');">
+                <header class="banner-overlay banner-overlay-left">
+                    <article class="banner-content banner-content-left">
+                        <h2>Sko som passer enhver anledning.</h2>
+                        <p>Fra formelle sko til hverdagslige sneakers – finn det perfekte paret som matcher stilen din. Komfort og kvalitet i hvert skritt.</p>
+                        <a href="#" class="banner-button">LES MER</a>
+                    </article>
+                </header>
+            </article>
+        </section>
+    
+        <!-- legge til anvigasjons knapper -->
+        <aside class="swiper-button-prev"></aside>
+        <aside class="swiper-button-next"></aside>
+    
+        <!--  Scrollbar -->
+        <aside class="swiper-scrollbar"></aside>
+    </section>
+    
+    <!-- Våre mest populære produkter -->
+    <section id="mest-popular-produkt">
+        <h2>Våre mest populære produkter</h2>
+        <p>Oppdag det beste av det beste</p>
+        <nav class="filter-buttons">
+            <button class="active">New Product</button>
+            <button>Special Price</button>
+            <button>Best Sellers</button>
+        </nav>
+        <section class="produkt-grid">
+            <a href="product.html" class="produkt-kort">
+                <span class="heart-container">
+                    <span class="heart-icon-circle">
+                        <span>♡</span>
+                    </span>
+                </span>
+                <img src="airfoce.png" alt="Product Image">
+                <section class="produkt-info">
+                    <h3>Nike Air Force</h3>
+                    <p class="price">Kr 1999</p>
+                </section>
+                <footer class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <p class="reviews">842 Reviews</p>
+                </footer>
+            </a>
+            <a href="product.html" class="produkt-kort">
+                <span class="heart-container">
+                    <span class="heart-icon-circle">
+                        <span>♡</span>
+                    </span>
+                </span>
+                <img src="airfoce.png" alt="Product Image">
+                <section class="produkt-info">
+                    <h3>Nike Air Force</h3>
+                    <p class="price">Kr 1999</p>
+                </section>
+                <footer class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <p class="reviews">842 Reviews</p>
+                </footer>
+            </a>
+            <a href="product.html" class="produkt-kort">
+                <span class="heart-container">
+                    <span class="heart-icon-circle">
+                        <span>♡</span>
+                    </span>
+                </span>
+                <img src="airfoce.png" alt="Product Image">
+                <section class="produkt-info">
+                    <h3>Nike Air Force</h3>
+                    <p class="price">Kr 1999</p>
+                </section>
+                <footer class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <p class="reviews">842 Reviews</p>
+                </footer>
+            </a>
+            <a href="product.html" class="produkt-kort">
+                <span class="heart-container">
+                    <span class="heart-icon-circle">
+                        <span>♡</span>
+                    </span>
+                </span>
+                <img src="airfoce.png" alt="Product Image">
+                <section class="produkt-info">
+                    <h3>Nike Air Force</h3>
+                    <p class="price">Kr 1999</p>
+                </section>
+                <footer class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <p class="reviews">842 Reviews</p>
+                </footer>
+            </a>
+            <a href="product.html" class="produkt-kort">
+                <span class="heart-container">
+                    <span class="heart-icon-circle">
+                        <span>♡</span>
+                    </span>
+                </span>
+                <img src="airfoce.png" alt="Product Image">
+                <section class="produkt-info">
+                    <h3>Nike Air Force</h3>
+                    <p class="price">Kr 1999</p>
+                </section>
+                <footer class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <p class="reviews">842 Reviews</p>
+                </footer>
+            </a>
+            <a href="product.html" class="produkt-kort">
+                <span class="heart-container">
+                    <span class="heart-icon-circle">
+                        <span>♡</span>
+                    </span>
+                </span>
+                <img src="airfoce.png" alt="Product Image">
+                <section class="produkt-info">
+                    <h3>Nike Air Force</h3>
+                    <p class="price">Kr 1999</p>
+                </section>
+                <footer class="rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <p class="reviews">842 Reviews</p>
+                </footer>
+            </a>
+        </section>
+    </section>
+
+    <!-- våre mest populære ketegorier -->
+    <section id="mest-popular-kategorier">
+        <h2>Våre mest populære kategorier</h2>
+        <p>Oppdag det beste av det beste</p>
+        <section class="kategori-container">
+            <article class="kategori-row-1">
+                <section class="kategori-kort kat-1" style="background-image: url('sneakers.jpg');">
+                    <h3>Sneakers</h3>
+                </section>
+                <section class="kategori-kort kat-2" style="background-image: url('lavesko.jpg');">
+                    <h3>Lavesko</h3>
+                </section>
+                <section class="kategori-kort kat-3" style="background-image: url('stovler.webp');">
+                    <h3>Støvler</h3>
+                </section>
+            </article>
+            <article class="kategori-row-2">
+                <section class="kategori-kort kat-4" style="background-image: url('tofler.jpg');">
+                    <h3>Tøffler</h3>
+                </section>
+                <section class="kategori-kort kat-5" style="background-image: url('joggesko.jpg');">
+                    <h3>Joggesko</h3>
+                </section>
+            </article>
+        </section>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="anmendelser">
+        <h2>Anmeldelser</h2>
+        <section class="anmendelser-grid">
+            <article class="anmendelser-kort">
+                <img src="reewiewbilde.avif" alt="anmendelser Image">
+                <section class="anmendelser-text">
+                    <h4>Ezat Jakob</h4>
+                    <footer class="rating">
+                        <span>⭐⭐⭐⭐☆</span>
+                    </footer>
+                    <p>Fantastisk service og veldig komfortable sko! Jeg er imponert over kvaliteten og vil definitivt handle her igjen."
+
+                    </p>
+                </section>
+            </article>
+            <article class="anmendelser-kort">
+                <img src="reewiewbilde.avif" alt="anmendelser Image">
+                <section class="anmendelser-text">
+                    <h4>Ezat Jakob</h4>
+                    <footer class="rating">
+                        <span>⭐⭐⭐⭐☆</span>
+                    </footer>
+                    <p>Godt utvalg og rask levering. Kunne ønsket meg litt flere fargealternativer på sneakers.</p>
+                </section>
+            </article>
+            <article class="anmendelser-kort">
+                <img src="reewiewbilde.avif" alt="anmendelser Image">
+                <section class="anmendelser-text">
+                    <h4>Ezat Jakob</h4>
+                    <footer class="rating">
+                        <span>⭐⭐⭐⭐☆</span>
+                    </footer>
+                    <p>Hyggelig kundeservice og bra priser. Skoene passet akkurat som beskrevet på nettsiden.</p>
+                </section>
+            </article>
+            <article class="anmendelser-kort">
+                <img src="reewiewbilde.avif" alt="anmendelser Image">
+                <section class="anmendelser-text">
+                    <h4>Ezat Jakob</h4>
+                    <footer class="rating">
+                        <span>⭐⭐⭐⭐☆</span>
+                    </footer>
+                    <p>Kjempefornøyd med støvlene jeg kjøpte! De er perfekte for vinteren og ser flotte ut.</p>
+                </section>
+            </article>
+            <article class="anmendelser-kort">
+                <img src="reewiewbilde.avif" alt="anmendelser Image">
+                <section class="anmendelser-text">
+                    <h4>Ezat Jakob</h4>
+                    <footer class="rating">
+                        <span>⭐⭐⭐⭐☆</span>
+                    </footer>
+                    <p>Jeg fant endelig de perfekte løpeskoene! De er lette og gir god støtte til føttene.</p>
+                </section>
+            </article>
+        </section>
+    </section>
+</main>
+
+<section class="center">
+    <hr class="line">
+</section>
+
+
+<!-- Footer -->
+<footer id="footer">
+    <article class="footer-container">
+        <section class="footer-logo">
+            <a href="index.html">Logo</a>
+        </section>
+                <section class="footer-description">
+                    Vi gjør det enkelt å finne sko som passer både deg og din livsstil.
+        </section>
+        <nav class="footer-sections">
+            <section class="row-footer">
+            <section class="footer-contact">
+                <h4>KONTAKT</h4>
+                <address>
+                    <span class="icon">📍</span><strong>Adresse:</strong> B R A Veien 4, 1757 Halden
+                    <br>
+                    <br>
+                    <span class="icon">📞</span><strong>Telefon:</strong> 69 60 80 00
+                    <br>
+                    <br>
+                    <span class="icon">📧</span><strong>E-post:</strong> halden@hlof.no
+                    <br>
+                    <br>
+                    <span class="icon">⏰</span><strong>Åpningstider:</strong> Stenger 15:00
+                </address>
+                
+            </section>
+            <section class="footer-navigation">
+                <h4>SNARVEIER</h4>
+                <a href="#mest-popular-produkt">Produkter</a>
+                <a href="#mest-popular-kategorier">Kategorier</a>
+                <a href="#footer">Kontakt oss</a>
+            </section>
+        </section>
+            <section class="footer-social">
+                <h4>SOSIALE MEDIER</h4>
+                <nav class="social-icons">
+                    <a href="https://www.instagram.com/.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                </nav>
+            </section>
+        </nav>
+    </article>
+</footer>
+
+<script>
+let swiper;
+
+// kilde brukt for sldier er; https://www.youtube.com/watch?v=iNFZFvvNQP0&list=PLrs1b_pKUik4nEp2Adn9YQm-vw8vafQ-z
+function updateSwiper() {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 768) {
+        if (swiper) {
+            // Disable autoplay and scrollbar for smaller screens
+            if(swiper.params.autoplay || swiper.params.scrollbar) {
+            swiper.params.autoplay = false;
+            swiper.params.scrollbar = false;
+            swiper.update(); // Update Swiper to apply changes
+            }
+        }
+    } else {
+        if (!swiper) {
+            // Initialize Swiper for larger screens
+            swiper = new Swiper('.swiper', {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                    draggable: true,
+                },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 5000,
+                },
+            });
+        }
+    }
+}
+
+// Run the updateSwiper function on initial load
+updateSwiper();
+
+// Add a listener for window resize events
+window.addEventListener('resize', updateSwiper);
+
+</script>
+
+</body>
+</html>
