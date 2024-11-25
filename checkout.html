@@ -328,5 +328,25 @@
     </article>
 </footer>
 
+<script>
+     // ski to top content
+     const button = document.createElement('button');
+        button.id = 'scrollToTopBtn';
+        button.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2l7 7h-4v7h-6V9H5l7-7z"/>
+            </svg>
+        `;
+        document.body.appendChild(button);
+
+        // Funksjon for å rulle til toppen
+        button.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+</script>
+
 </body>
 </html>
