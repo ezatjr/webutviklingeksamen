@@ -5,6 +5,8 @@ body {
     padding: 0;
     background-color: #ffffff;
 }
+
+
 .headeren {
     display: flex;
     align-items: center;
@@ -47,6 +49,22 @@ body {
     cursor: pointer;
     font-size: 1.2em;
 }
+.skip-link {
+    position: absolute;
+    top: -40px; /* Skjuler lenken utenfor synlig område */
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.skip-link:focus {
+    top: 10px; /* Gjør lenken synlig når den er i fokus */
+}
+
 
 .navigasjon {
     display: flex;
@@ -167,6 +185,7 @@ body {
         gap: 5px;
     }
 }
+
 
 .logo {
     font-weight: bold;

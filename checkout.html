@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Store - Checkout</title>
+    <title>Til betalingsiden</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 </head>
 <body>
+    <a href="#fullfør-hopp" class="skip-link">Hopp til innhold</a>
+
 <!-- Global Header -->
 <header class="headeren">
     <nav class="søke-container">
@@ -39,7 +41,7 @@
             <h2 class="section-title">1. SHOPPINGBAGEN DIN</h2>
             <ul class="vogn-items">
                 <li class="vogn-item">
-               <a href="product.html">   <img src="airfoce.png" alt="Product" class="vogn-item-image"></a>
+               <a href="product.html">   <img src="bilder/airfoce.png" alt="Bilde til checkout" class="vogn-item-image"></a>
                     <article class="vogn-item-details">
                         <h3 class="product-name">PRODUCT NAME</h3>
                         <p class="product-price">Kr 1599</p>
@@ -66,7 +68,7 @@
                     </aside>
                 </li>
                 <li class="vogn-item">
-                    <a href="product.html">   <img src="airfoce.png" alt="Product" class="vogn-item-image"></a>
+                    <a href="product.html">   <img src="bilder/airfoce.png" alt="Produkt bilde" class="vogn-item-image"></a>
                     <article class="vogn-item-details">
                         <h3 class="produkt-name">PRODUCT NAME</h3>
                         <p class="produkt-pris">Kr 1599</p>
@@ -94,7 +96,7 @@
                     </aside>
                 </li>
                 <li class="vogn-item">
-                    <a href="product.html">   <img src="airfoce.png" alt="Product" class="vogn-item-image"></a>
+                    <a href="product.html">   <img src="bilder/airfoce.png" alt="Produkt bilde" class="vogn-item-image"></a>
                     <article class="vogn-item-details">
                         <h3 class="product-name">PRODUCT NAME</h3>
                         <p class="product-price">Kr 1599</p>
@@ -133,11 +135,11 @@
                     <section class="form-grid">
                         <label class="form-group">
                             <span>Fornavn</span>
-                            <input type="text" id="firstname" placeholder="Nora*" required>
+                            <input type="text" id="firstname"  autocomplete="given-name" placeholder="Nora*" required>
                         </label>
                         <label class="form-group form-group-right">
                             <span>Etternavn</span>
-                            <input type="text" id="lastname" placeholder="Nordman*" required>
+                            <input type="text" id="lastname"  autocomplete="family-name" placeholder="Nordman*" required>
                         </label>
                         <label class="form-group full-width">
                             <span>Gateadresse</span>
@@ -145,19 +147,19 @@
                         </label>
                         <label class="form-group">
                             <span>Postnummer</span>
-                            <input type="number" id="postcode" placeholder="1752*" required>
+                            <input type="number" id="postcode"  placeholder="1752*" required>
                         </label>
                         <label class="form-group form-group-right">
                             <span>Poststed</span>
-                            <input type="text" id="poststed" placeholder="Halden*" required>
+                            <input type="text" id="poststed"  autocomplete="address-level2" placeholder="Halden*" required>
                         </label>
                     </section>
                 </fieldset>
         
                 <fieldset class="form-section">
                     <legend class="subsection-label">Kontaktinformasjon</legend>
-                    <label>E-post</label>
-                    <input type="email" placeholder="Noranordman@hof.no*">
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" placeholder="Noranordman@hof.no*" required>
                     <label>Telefon</label>
                     <input type="tel" placeholder="+47 49***018">
                 </fieldset>
@@ -249,7 +251,7 @@
                     <p class="total-label">Å betale inkl. mva.</p>
                     <h3 class="total-amount">1 199 kr</h3>
                 </footer>
-        
+                <section id="fullfør-hopp"></section>
                 <button class="submit-button">Fullfør kjøp</button>
         
                 <p class="terms-text">
@@ -313,6 +315,7 @@
                 <a href="#">Produkter</a>
                 <a href="#">Kategorier</a>
                 <a href="#">Kontakt oss</a>
+                <a href="Mal–WCAG-sjekklisteforutfyllingavtilgjengelighetserklæringfornettløsning24.01.2024(4).htm">WCAG mal</a>
             </section>
         </section>
             <section class="footer-social">
@@ -346,6 +349,16 @@
                 behavior: 'smooth'
             });
         });
+        document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            // Fjerner fokus fra det aktive elementet
+            document.activeElement.blur();
+
+            // Eventuelt, gi en visuell indikasjon på at navigasjonen er deaktivert
+            alert('Tastaturnavigasjon avsluttet.');
+        }
+    });
+
 </script>
 
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nettbutikk -Produkter</title>
+    <title>Våre produkter i nettbutikken</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
     <style>
@@ -11,6 +11,7 @@
     </style>
 </head>
 <body>
+    <a href="#produkt-innhold" class="skip-link">Hopp til innhold</a>
 
 <!-- Global Header -->
 <header class="headeren">
@@ -34,6 +35,7 @@
 </header>
 
 <main>
+    <section id="produkt-innhold"></section>
     <section class="produkt-side">
         <nav class="breadcrumb">
             <a href="index.html">Hjem</a> &gt; <a href="index.html#most-popular-categories">Kategori</a> &gt; <span>Produktnavn</span>
@@ -41,11 +43,11 @@
         <article class="produkt-content">
             <figure class="produkt-gallery">
                 <section class="thumbnail-gallery">
-                    <img src="airfoce.png" alt="Thumbnail 1">
-                    <img src="airfoce.png" alt="Thumbnail 2">
-                    <img src="airfoce.png" alt="Thumbnail 3">
+                    <img src="bilder/airfoce.png" alt="Thumbnail bilde">
+                    <img src="bilder/airfoce.png" alt="Thumbnail bilde">
+                    <img src="bilder/airfoce.png" alt="Thumbnail bilde">
                 </section>
-                <img src="airfoce.png" alt="Product Image" class="main-image">
+                <img src="bilder/airfoce.png" alt="Produkt Image" class="main-image">
             </figure>
             <section class="produkt-details">
                 <h1>Produktnavn</h1>
@@ -95,11 +97,11 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>EU</th>
-                                        <th>INT</th>
-                                        <th>BRYSTVIDDE</th>
-                                        <th>LIVVIDDE</th>
-                                        <th>HOFTEMÅL</th>
+                                        <th scope="col">EU</th>
+                                        <th scope="col">INT</th>
+                                        <th scope="col">BRYSTVIDDE</th>
+                                        <th scope="col">LIVVIDDE</th>
+                                        <th scope="col">HOFTEMÅL</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -208,12 +210,9 @@
             <div class="produkt-grid">
                 <a href="#" class="produkt-kort">
                     <span class="heart-container">
-                        <span class="heart-icon-circle">
-                            <span>♡</span>
-                        </span>
+                        <span class="heart-icon-circle" aria-label="Legg til i ønskeliste">♡</span>
                     </span>
-                    
-                    <img src="airfoce.png" alt="Produkt bilde">
+                    <img src="bilder/airfoce.png" alt="Produkt bilde">
                     <section class="produkt-info">
                         <h3>Nike Air Force</h3>
                         <p class="price">Kr 1999</p>
@@ -223,76 +222,70 @@
                         <p class="reviews">842 Reviews</p>
                     </footer>
                 </a>
-
-
+    
                 <a href="#" class="produkt-kort">
                     <span class="heart-container">
-                        <span class="heart-icon-circle">
-                            <span>♡</span>
-                        </span>
+                        <span class="heart-icon-circle" aria-label="Legg til i ønskeliste">♡</span>
                     </span>
-                  <img src="airfoce.png" alt="Produkt bilde">
-                <section class="produkt-info">
-                    <h3>Nike Air Force</h3>
-                    <p class="price">Kr 1999</p>
-                </section>
-                <footer class="rating">
-                    <span class="stars">⭐⭐⭐⭐⭐</span>
-                    <p class="reviews">842 Reviews</p>
-                </footer>
+                    <img src="bilder/airfoce.png" alt="Produkt bilde">
+                    <section class="produkt-info">
+                        <h3>Nike Air Force</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <footer class="rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <p class="reviews">842 Reviews</p>
+                    </footer>
                 </a>
+    
                 <a href="#" class="produkt-kort">
                     <span class="heart-container">
-                        <span class="heart-icon-circle">
-                            <span>♡</span>
-                        </span>
+                        <span class="heart-icon-circle" aria-label="Legg til i ønskeliste">♡</span>
                     </span>
-                    <img src="airfoce.png" alt="Produkt bilde">
-                <section class="produkt-info">
-                    <h3>Nike Air Force</h3>
-                    <p class="price">Kr 1999</p>
-                </section>
-                <footer class="rating">
-                    <span class="stars">⭐⭐⭐⭐⭐</span>
-                    <p class="reviews">842 Reviews</p>
-                </footer>
+                    <img src="bilder/airfoce.png" alt="Produkt bilde">
+                    <section class="produkt-info">
+                        <h3>Nike Air Force</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <footer class="rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <p class="reviews">842 Reviews</p>
+                    </footer>
                 </a>
-                
+    
                 <a href="#" class="produkt-kort">
                     <span class="heart-container">
-                        <span class="heart-icon-circle">
-                            <span>♡</span>
-                        </span>
+                        <span class="heart-icon-circle" aria-label="Legg til i ønskeliste">♡</span>
                     </span>
-                    <img src="airfoce.png" alt="Produkt bilde">
-                <section class="produkt-info">
-                    <h3>Nike Air Force</h3>
-                    <p class="price">Kr 1999</p>
-                </section>
-                <footer class="rating">
-                    <span class="stars">⭐⭐⭐⭐⭐</span>
-                    <p class="reviews">842 Reviews</p>
-                </footer>
+                    <img src="bilder/airfoce.png" alt="Produkt bilde">
+                    <section class="produkt-info">
+                        <h3>Nike Air Force</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <footer class="rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <p class="reviews">842 Reviews</p>
+                    </footer>
                 </a>
+    
                 <a href="#" class="produkt-kort">
                     <span class="heart-container">
-                        <span class="heart-icon-circle">
-                            <span>♡</span>
-                        </span>
+                        <span class="heart-icon-circle" aria-label="Legg til i ønskeliste">♡</span>
                     </span>
-                    <img src="airfoce.png" alt="Produkt bilde">
-                <section class="produkt-info">
-                    <h3>Nike Air Force</h3>
-                    <p class="price">Kr 1999</p>
-                </section>
-                <footer class="rating">
-                    <span class="stars">⭐⭐⭐⭐⭐</span>
-                    <p class="reviews">842 Reviews</p>
-                </footer>
+                    <img src="bilder/airfoce.png" alt="Produkt bilde">
+                    <section class="produkt-info">
+                        <h3>Nike Air Force</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <footer class="rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <p class="reviews">842 Reviews</p>
+                    </footer>
                 </a>
             </div>
         </div>
     </section>
+    
 </main>
 <section class="midtstilt">
     <hr class="midtlinje">
@@ -330,6 +323,8 @@
                 <a href="#">Produkter</a>
                 <a href="#">Kategorier</a>
                 <a href="#">Kontakt oss</a>
+                <a href="Mal–WCAG-sjekklisteforutfyllingavtilgjengelighetserklæringfornettløsning24.01.2024(4).htm">WCAG mal</a>
+
             </section>
         </section>
             <section class="footer-social">
@@ -353,6 +348,26 @@ const isExpanded = this.getAttribute("aria-expanded") === "true";
     this.setAttribute("aria-expanded", !isExpanded);
 });
 
+    //Javasacript for + ikonet til å åpne og lukke seg
+
+document.addEventListener('DOMContentLoaded', function() {
+        const infoItems = document.querySelectorAll('.info-item button');
+        
+        infoItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                
+                this.setAttribute('aria-expanded', !isExpanded);
+                content.classList.toggle('expanded');
+                
+                // Update the expand icon
+                const expandIcon = this.querySelector('.expand-icon');
+                expandIcon.textContent = isExpanded ? '+' : '−';
+            });
+        });
+    });
+
  // ski to top content
  const button = document.createElement('button');
         button.id = 'scrollToTopBtn';
@@ -370,6 +385,17 @@ const isExpanded = this.getAttribute("aria-expanded") === "true";
                 behavior: 'smooth'
             });
         });
+
+        document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            // Fjerner fokus fra det aktive elementet
+            document.activeElement.blur();
+
+            // Eventuelt, gi en visuell indikasjon på at navigasjonen er deaktivert
+            alert('Tastaturnavigasjon avsluttet.');
+        }
+    });
+
 
 </script>
 </body>
