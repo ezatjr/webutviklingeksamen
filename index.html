@@ -32,10 +32,11 @@
     
 </header>
 <!-- Kilde https://www.youtube.com/watch?v=iNFZFvvNQP0&list=PLrs1b_pKUik4nEp2Adn9YQm-vw8vafQ-z -->
+ <!--Disse to yt vidoene er brukt for å teste mye og få det til slutt https://www.youtube.com/watch?app=desktop&v=UJY8GWmoMfo-->
 <main>
     <section class="banner swiper">
         <section class="swiper-wrapper">
-            <article class="swiper-slide banner-slide" style="background-image: url('bilder/stovler.webp');" aria-label="bilde til banner">
+            <article class="swiper-slide banner-slide" style="background-image: url('bilder/tofler.jpg');" aria-label="bilde til banner">
                 <header class="banner-overlay">
                     <article class="banner-content">
                         <h2>Velkommen til skobutikken vår.</h2>
@@ -44,7 +45,7 @@
                     </article>
                 </header>
             </article>
-            <article class="swiper-slide banner-slide" style="background-image: url('bilder/tofler.jpg');"  aria-label="bilde til banner">
+            <article class="swiper-slide banner-slide" style="background-image: url('bilder/stovler_t.webp');"  aria-label="bilde til banner">
                 <header class="banner-overlay banner-overlay-left">
                     <article class="banner-content banner-content-left">
                         <h2>Oppdag vår eksklusive kolleksjon av vinterstøvler</h2>
@@ -53,7 +54,7 @@
                     </article>
                 </header>
             </article>
-            <article class="swiper-slide banner-slide" style="background-image: url('bilder/sneakers.jpg');"  aria-label="bilde til banner">
+            <article class="swiper-slide banner-slide" style="background-image: url('bilder/joggesko.webp');"  aria-label="bilde til banner">
                 <header class="banner-overlay banner-overlay-left">
                     <article class="banner-content banner-content-left">
                         <h2>Sko som passer enhver anledning.</h2>
@@ -181,19 +182,21 @@
         </section>
     </section>
 
+
     <!-- våre mest populære ketegorier -->
-    <section id="mest-popular-kategorier">
+         <!-- Jeg så¨mye på denne videon for inspirasjon og testet mye på egenhånd for å få til sluttproduktet;  https://www.youtube.com/watch?v=Trw_9lisYVY -->
+      <section id="mest-popular-kategorier">
         <h2>Våre mest populære kategorier</h2>
         <p>Oppdag det beste av det beste</p>
         <section class="kategori-container">
             <article class="kategori-row-1">
-                <section class="kategori-kort kat-1" style="background-image: url('bilder/sneakers.jpg');"  aria-label="bilde til banner">
+                <section class="kategori-kort kat-1" style="background-image: url('bilder/sneakers.webp');"  aria-label="bilde til banner">
                     <h3>Sneakers</h3>
                 </section>
                 <section class="kategori-kort kat-2" style="background-image: url('bilder/lavesko.jpg');" aria-label="bilde til banner">
                     <h3>Lavesko</h3>
                 </section>
-                <section class="kategori-kort kat-3" style="background-image: url('bilder/stovler.webp');" aria-label="bilde til banner">
+                <section class="kategori-kort kat-3" style="background-image: url('bilder/stovler_t.webp');" aria-label="bilde til banner">
                     <h3>Støvler</h3>
                 </section>
             </article>
@@ -201,7 +204,7 @@
                 <section class="kategori-kort kat-4" style="background-image: url('bilder/tofler.jpg');" aria-label="bilde til banner">
                     <h3>Tøffler</h3>
                 </section>
-                <section class="kategori-kort kat-5" style="background-image: url('bilder/joggesko.jpg');" aria-label="bilde til banner">
+                <section class="kategori-kort kat-5" style="background-image: url('bilder/joggesko.webp');" aria-label="bilde til banner">
                     <h3>Joggesko</h3>
                 </section>
             </article>
@@ -210,6 +213,8 @@
 
     <!-- Reviews Section -->
      <!--Review bilde er hentet fra nettet ; https://www.freepik.com/premium-vector/businessman-profile-cartoon_5321648.htm-->
+     <!-- Kilde https://www.youtube.com/watch?v=iNFZFvvNQP0&list=PLrs1b_pKUik4nEp2Adn9YQm-vw8vafQ-z -->
+    <!--Diise to yt vidoene er brukt for å teste mye og få det til slutt https://www.youtube.com/watch?app=desktop&v=UJY8GWmoMfo-->
     <section id="anmendelser">
         <h2>Anmeldelser</h2>
         <section class="anmendelser-grid">
@@ -326,7 +331,7 @@
 <script>
 let swiper;
 
-// kilde brukt for sldier er; https://www.youtube.com/watch?v=iNFZFvvNQP0&list=PLrs1b_pKUik4nEp2Adn9YQm-vw8vafQ-z
+// kilde brukt for for å lære meg er ; https://www.youtube.com/watch?v=iNFZFvvNQP0&list=PLrs1b_pKUik4nEp2Adn9YQm-vw8vafQ-z
 function updateSwiper() {
     const screenWidth = window.innerWidth;
 
@@ -361,16 +366,13 @@ function updateSwiper() {
         }
     }
 }
-
-// Run the updateSwiper function on initial load
 updateSwiper();
-
-// Add a listener for window resize events
 window.addEventListener('resize', updateSwiper);
 
 
+
     
-          // ski to top content
+          // skip to top content, kilde: Chatgpt.
           const button = document.createElement('button');
         button.id = 'scrollToTopBtn';
         button.innerHTML = `
