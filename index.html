@@ -331,26 +331,28 @@
 <script>
 // kilde brukt for for å lære meg er ; https://www.youtube.com/watch?v=iNFZFvvNQP0&list=PLrs1b_pKUik4nEp2Adn9YQm-vw8vafQ-z
 let swiper;
+
 function updateSwiper() {
-    const swiperContainer = document.querySelector('.swiper');
-    if (!swiperContainer) return;
-
-    const slides = document.querySelectorAll('.swiper-slide');
-    if (!slides.length) return;
-
     const screenWidth = window.innerWidth;
 
     if (screenWidth < 480) {
         if (swiper) {
-            swiper.destroy(true, true);
+            swiper.destroy(true, true); // Destroy Swiper instance completely
             swiper = null;
         }
 
+        // Ensure only the first slide is visible
+        const slides = document.querySelectorAll('.swiper-slide');
         slides.forEach((slide, index) => {
-            slide.style.display = index === 0 ? 'block' : 'none'; slide
+            if (index === 0) {
+                slide.style.display = 'block'; // Show the first slide
+            } else {
+                slide.style.display = 'none'; // Hide other slides
+            }
         });
     } else {
         if (!swiper) {
+            // Reinitialize Swiper for larger screens
             swiper = new Swiper('.swiper', {
                 loop: true,
                 navigation: {
@@ -365,24 +367,23 @@ function updateSwiper() {
                 spaceBetween: 20,
                 autoplay: {
                     delay: 5000,
-                    disableOnInteraction: false,
                 },
             });
 
+            // Ensure all slides are visible when Swiper is initialized
+            const slides = document.querySelectorAll('.swiper-slide');
             slides.forEach(slide => {
-                slide.style.display = 'block'; // Show all slides
+                slide.style.display = 'block';
             });
         }
     }
 }
 
+// Run the updateSwiper function on initial load
 updateSwiper();
 
-let resizeTimeout;
-window.addEventListener('resize', () => {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(updateSwiper, 100);
-});
+// Add a listener for window resize events
+window.addEventListener('resize', updateSwiper);
 
 
 

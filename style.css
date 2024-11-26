@@ -34,7 +34,7 @@ body {
     order: 1;
     flex-grow: 1; 
     max-width: 300px; 
-    margin-left: 40px;
+    
 }
 
 .søke-container input[type="text"] {
