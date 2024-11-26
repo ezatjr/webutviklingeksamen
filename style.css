@@ -1028,9 +1028,9 @@ footer {
     }
     
     @media (max-width: 420px) {
-        .main-image{
-            height:360px;
-            width:156px;
+        .main-image {
+            height: 360px;
+            width: 156px;
         }
     }
 
