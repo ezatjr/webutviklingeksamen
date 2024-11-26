@@ -897,8 +897,8 @@ footer {
 }
 
 .thumbnail-gallery img {
-    width: 45px;
-    height: 80px;
+      width: 124px;
+    height: 203px;
     border-radius: 5px;
     cursor: pointer;
     opacity: 0.7;
@@ -1828,15 +1828,46 @@ svg {
     .section-header span {
         margin-left: 0; /* Justerer margin siden layout endres */
         text-align: left; /* Valgfritt: Sentraliserer teksten */
-        margin-left: -150px;
+        margin-left: -125px;
     }
 
     .se-mer {
         margin-top: 10px; /* Legger til avstand mellom span og se-mer */
         text-align: left; /* Valgfritt: Sentraliserer lenken */
-        margin-left: -175px;
+        margin-left: -150px;
     }
 }
+
+/* Media query for screens smaller than 450px */
+@media (max-width: 450px) {
+    .vogn-item {
+        display: flex;
+        flex-direction: column; /* Sett innholdet i en kolonne */
+        align-items: flex-start; /* Juster innholdet til venstre */
+    }
+
+    .vogn-item-image {
+        width: 100%; /* Beholder bildebredden som allerede definert */
+        margin-bottom: 10px; /* Lager avstand mellom bildet og detaljene */
+    }
+
+    .vogn-item-details {
+        width: 100%; /* Sørger for at detaljene bruker full bredde */
+        text-align: left; /* Juster teksten til venstre for konsekvens */
+    }
+
+    .vogn-item-actions {
+        margin-top: 10px; /* Avstand mellom størrelsesvalget og handlingene */
+        display: flex; /* Sørger for at knappene er ved siden av hverandre */
+        flex-direction: row; /* Plasser knappene i en rad */
+        gap: 10px; /* Lager mellomrom mellom knappene */
+        align-items: center; /* Sentrerer knappene vertikalt */
+        justify-content: flex-start; /* Justerer knappene til venstre */
+        margin-right: 340px;
+    }
+     }
+
+
 
 @media (max-width: 480px) {
 
@@ -1874,35 +1905,67 @@ svg {
 
 }
 
-@media (max-width: 480px) {
-.produkt-gallery{
-    flex-direction: row;
-    margin:0;
-}
-.thumbnail-gallery{
-    flex-direction: column;
-}
-.main-image{
-    height:360px;
-    width:260px;
-}
-.thumbnail-gallery img{
-    height: 95px;
-}
-.lignende-produkter{
-    padding:0;
-}
-.section-header{
-    padding:5px;
-}
+@media (max-width: 500px) and (min-width: 400px) {
+    .produkt-gallery {
+        flex-direction: row; /* Plasser hovedbildet og thumbnailene i en rad */
+        margin: 0;
+    }
+
+    .thumbnail-gallery {
+        flex-direction: column; /* Plasser thumbnailene i en kolonne */
+    }
+
+    .main-image {
+        height: 300px; /* Fast høyde for hovedbildet */
+        width: 100%; /* Fast bredde for hovedbildet */
+    }
+
+    .thumbnail-gallery img {
+        height: 95px; /* Fast høyde for hver thumbnail */
+        width: 100%; /* Sikrer at bildene fyller bredden */
+    }
+
+    .lignende-produkter {
+        padding: 0;
+    }
+
+    .section-header {
+        padding: 5px;
+    }
 }
 
-@media (max-width: 420px) {
-    .main-image{
-        height:360px;
-        width:225px;
+@media (max-width: 400px) and (min-width: 100px) {
+    .produkt-gallery {
+        flex-direction: row; /* Plasser hovedbildet og thumbnailene i en rad */
+        margin: 0;
     }
-}   
+
+    .thumbnail-gallery {
+        flex-direction: column; /* Plasser thumbnailene i en kolonne */
+    }
+
+    .main-image {
+        height: 200px; /* Fast høyde for hovedbildet */
+        width: 100%; /* Fast bredde for hovedbildet */
+    }
+
+    .thumbnail-gallery img {
+        height: 60px; /* Fast høyde for hver thumbnail */
+        width: 100%; /* Sikrer at bildene fyller bredden */
+    }
+
+    .lignende-produkter {
+        padding: 0;
+    }
+
+    .section-header {
+        padding: 5px;
+    }
+}
+
+
+
+
 
 @media (max-width: 370px) {
     .section-header  {
