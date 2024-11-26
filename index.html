@@ -329,24 +329,28 @@
 </footer>
 
 <script>
-let swiper;
-
 // kilde brukt for for å lære meg er ; https://www.youtube.com/watch?v=iNFZFvvNQP0&list=PLrs1b_pKUik4nEp2Adn9YQm-vw8vafQ-z
+let swiper;
 function updateSwiper() {
+    const swiperContainer = document.querySelector('.swiper');
+    if (!swiperContainer) return;
+
+    const slides = document.querySelectorAll('.swiper-slide');
+    if (!slides.length) return;
+
     const screenWidth = window.innerWidth;
 
-    if (screenWidth < 768) {
+    if (screenWidth < 480) {
         if (swiper) {
-            // Disable autoplay and scrollbar for smaller screens
-            if(swiper.params.autoplay || swiper.params.scrollbar) {
-            swiper.params.autoplay = false;
-            swiper.params.scrollbar = false;
-            swiper.update(); // Update Swiper to apply changes
-            }
+            swiper.destroy(true, true);
+            swiper = null;
         }
+
+        slides.forEach((slide, index) => {
+            slide.style.display = index === 0 ? 'block' : 'none'; slide
+        });
     } else {
         if (!swiper) {
-            // Initialize Swiper for larger screens
             swiper = new Swiper('.swiper', {
                 loop: true,
                 navigation: {
@@ -361,13 +365,24 @@ function updateSwiper() {
                 spaceBetween: 20,
                 autoplay: {
                     delay: 5000,
+                    disableOnInteraction: false,
                 },
+            });
+
+            slides.forEach(slide => {
+                slide.style.display = 'block'; // Show all slides
             });
         }
     }
 }
+
 updateSwiper();
-window.addEventListener('resize', updateSwiper);
+
+let resizeTimeout;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(updateSwiper, 100);
+});
 
 
 
